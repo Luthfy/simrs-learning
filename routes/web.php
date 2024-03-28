@@ -20,3 +20,5 @@ Route::get('/', function () {
 
 // bikin route nya dulu
 Route::get('pasien', [PasienController::class, 'index']);
+Route::get('pasien/create', [PasienController::class, 'create']);
+Route::post('pasien/store', [PasienController::class, 'store']);

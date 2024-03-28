@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('patients', function (Blueprint $table) {
             $table->id(); 
             $table->uuid('uuid')->unique(); // primary key, big integer, auto increment , id
-            $table->string('record_number', 10)->unique();
+            $table->string('record_number', 10);
             $table->string('name', 100);
             $table->timestamps();
         });
